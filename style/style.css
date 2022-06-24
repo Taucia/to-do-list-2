@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(118, 33, 118);
+    background-color:aquamarine;
     
 }
 
@@ -26,7 +26,7 @@ input[type=text] {
 }
 #input{
     border-color: black;
-    color:purple;
+    color:blue;
 }
 #sort-by {
     text-align: center;
@@ -48,16 +48,16 @@ input[type=text] {
 }
 
 .list-item {
-    background-color:chocolate;
+    background-color:blue;
     padding: 3%;
     display: table;
-    border-color: purple;
+    border-color:aqua;
 
 }
 
 .list-item:hover, .complete {
-    background-color:chocolate;
-    border-color: orchid;
+    background-color:blue;
+    border-color: blue;
     font-weight: 500;
     cursor: pointer;
 }
@@ -87,7 +87,7 @@ button {
 button:hover {
     cursor: pointer;
     font-weight: 500;
-    background-color:rgb(91, 29, 91);
+    background-color:blue;
 }
 
 #button {
@@ -102,7 +102,7 @@ button:hover {
 }
 
 .delete-button:hover {
-    background-color: purple;
+    background-color:blue;
 }
 
 .hide {

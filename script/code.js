@@ -173,3 +173,13 @@ function addTodoToList(todo) {
 
     list.appendChild(item)
 }
+
+
+document.querySelector('#sorting').addEventListener('click', ()=> {
+    lists.sort( (a, b)=> {
+        return (a.item < b.item) ? -1: 0; 
+    });
+    // Save new data to the localstorage
+    localStorage.setItem('items', JSON.stringify(lists));   
+    readItems(); 
+});

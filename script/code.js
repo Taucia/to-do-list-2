@@ -1,9 +1,10 @@
 const form = document.querySelector('#todo-form')
 const input = document.querySelector('#input')
 const buttons = document.querySelectorAll('.view')
-const allBtn = document.querySelector('#all')
-const completedBtn = document.querySelector('#completed-items')
-const nonCompletedBtn = document.querySelector('#uncompleted-items')
+// const allBtn = document.querySelector('#all')
+// const completedBtn = document.querySelector('#completed-items')
+// const nonCompletedBtn = document.querySelector('#uncompleted-items')
+const sortbybtn = document.querySelector('#sortby-items')
 const list = document.querySelector('#list')
 const completeAllBtn = document.querySelector('#mark-as-complete')
 const clearBtn = document.querySelector('#clear-list')
@@ -36,26 +37,33 @@ form.addEventListener("submit", e => {
 })
 
 // show all todos
-allBtn.addEventListener("click", () => {
-    const allItems = Array.from(list.children)
-    allItems.forEach(todo => todo.classList.remove('hide'))
+// allBtn.addEventListener("click", () => {
+//     const allItems = Array.from(list.children)
+//     allItems.forEach(todo => todo.classList.remove('hide'))
+// })
+// sort by todo
+sortbybtn.addEventListener("click",()=>
+{const sortbybtn =array.form(list.children)
+    sortbyitems.forEach(todo => todo.classList.remove('hide'))
+    const completed = sortbyitems.filter(todo => !todo.classList.contains('complete'))
+      completed.forEach(todo => todo.classList.add('hide'))
 })
 
 // only show completed items
-completedBtn.addEventListener("click", () => {
-    const allItems = Array.from(list.children)
-    allItems.forEach(todo => todo.classList.remove('hide'))
-    const completed = allItems.filter(todo => !todo.classList.contains('complete'))
-    completed.forEach(todo => todo.classList.add('hide'))
-})
+// completedBtn.addEventListener("click", () => {
+//     const allItems = Array.from(list.children)
+//     allItems.forEach(todo => todo.classList.remove('hide'))
+//     const completed = allItems.filter(todo => !todo.classList.contains('complete'))
+//     completed.forEach(todo => todo.classList.add('hide'))
+// })
 
 // only show uncompleted items
-nonCompletedBtn.addEventListener("click", () => {
-    const allItems = Array.from(list.children)
-    allItems.forEach(todo => todo.classList.remove('hide'))
-    const completed = allItems.filter(todo => todo.classList.contains('complete'))
-    completed.forEach(todo => todo.classList.add('hide'))
-})
+// nonCompletedBtn.addEventListener("click", () => {
+//     const allItems = Array.from(list.children)
+//     allItems.forEach(todo => todo.classList.remove('hide'))
+//     const completed = allItems.filter(todo => todo.classList.contains('complete'))
+//     completed.forEach(todo => todo.classList.add('hide'))
+// })
 
 // clear list
 clearBtn.addEventListener("click", () => {

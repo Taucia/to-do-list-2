@@ -10,34 +10,6 @@ h1 {
     text-decoration-line: underline;
 }
 
-#input-container {
-    padding: 1%;
-    margin: auto;
-    margin-bottom: 2%;
-    text-align: center;
-}
-
-input[type=text] {
-    padding: 10px;
-    width: 88%;
-    border-radius: 5px;
-    border: none;
-   
-}
-#input{
-    border-color: black;
-    color:blue;
-}
-#sort-by {
-    text-align: center;
-}
-
-#items-container {
-    width: 80%;
-    margin: auto;
-    margin-top: 1%;
-}
-
 #list {
     list-style-type: none;
     text-align: left;
@@ -68,6 +40,7 @@ label:hover {
 
 .complete {
     text-decoration: line-through;
+    color: antiquewhite;
 }
 
 label {
@@ -76,6 +49,35 @@ label {
     border-color:black;
     
 }
+#input-container {
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    text-align: center;
+    border-radius:20px;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 88%;
+    border-radius: 5px;
+    border: none;
+   
+}
+#input{
+    border-color: black;
+    color:blue;
+}
+#sort-by {
+    text-align: center;
+}
+
+#items-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
 
 button {
     background-color:#378eba;
@@ -89,7 +91,7 @@ button:hover {
     font-weight: 500;
     background-color:blue;
 }
-
+ 
 #button {
     text-align: right;
 }
